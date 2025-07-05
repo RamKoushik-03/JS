@@ -50,3 +50,10 @@ let str1 = String(num1);
 console.log(typeof str1); //string
 console.log(str1); // "33"
 
+// **************Operations******************
+
+console.log(1 + "2");
+console.log("1" + 2);
+console.log(1 + 2 + "3");
+console.log("1" + 2 + 3);
+console.log(1 + 2 +"3" + 4);
