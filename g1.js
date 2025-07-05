@@ -14,5 +14,21 @@ let gg;
 
 console.table([x, y, z, gg]);
 
+// alert(3+3)
+// This will not work in Node.js, since alert is a browser function
+
+//Datatypes
+let a = 10; //number
+let b = "Hello"; //string
+let c = true; //boolean
+let d = null; //null
+let e; //undefined
+let f = Symbol("symbol"); 
+let g = BigInt(12345678901234567890); //bigint
+
+console.log(typeof undefined); //undefined
+console.log(typeof null); //object 
+
+
 
 
