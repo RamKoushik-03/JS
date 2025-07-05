@@ -57,3 +57,8 @@ console.log("1" + 2);
 console.log(1 + 2 + "3");
 console.log("1" + 2 + 3);
 console.log(1 + 2 +"3" + 4);
+
+//Strict Checking
+console.log(1 === 1); // true
+console.log(1 === "1"); // false
+
