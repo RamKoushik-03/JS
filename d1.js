@@ -62,3 +62,22 @@ console.log(1 + 2 +"3" + 4);
 console.log(1 === 1); // true
 console.log(1 === "1"); // false
 
+const id = Symbol('123');
+const anotherId = Symbol('123');
+console.log(id === anotherId); //false
+
+const bignum = 12345678901234567890n;
+
+//Arrays , objects
+const heros = ["Thor", "Ironman", "Hulk"];
+
+let myObj = {
+    name: "John",
+    age: 30,
+}
+
+//Functions
+const myfunc = function() {
+    console.log("Hello world");
+}
+
