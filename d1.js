@@ -134,3 +134,38 @@ console.log(st3.replace("s", "@")); // "da@agassfsfasdadsfsf";
 const st4 = "Hello-world-how-are-you";
 console.log(st4.split("-")); // ["Hello", "world", "how", "are", "you"]
 
+console.log(Math.random()); // Random number between 0 and 1
+console.log(Math.random() * 10); // Random number between 0 and 10
+console.log(Math.floor(Math.random() * 10)); // Random integer between 0 and 9
+console.log(Math.ceil(Math.random() * 10)); // Random integer between 1 and 10
+console.log(Math.round(Math.random() * 10)); // Random integer between 0 and 10
+
+const min = 10;
+const max = 20;
+const randomNum = Math.floor(Math.random() * (max - min + 1)) + min; // Random integer between 10 and 20
+console.log(randomNum); 
+
+let myD = new Date();
+console.log(myD); // Current date and time
+console.log(myD.toString()); // String representation of the date
+console.log(myD.toDateString()); // Date in string format
+console.log(myD.toISOString()); // ISO string format
+console.log(myD.getFullYear()); // Current year
+console.log(myD.getMonth()); // Current month (0-11)
+console.log(myD.getDate()); // Current date (1-31)
+console.log(myD.getDay()); // Current day of the week (0-6)
+console.log(myD.getHours()); // Current hour (0-23)
+console.log(myD.getMinutes()); // Current minutes (0-59)
+console.log(myD.getSeconds()); // Current seconds (0-59)
+console.log(myD.getMilliseconds()); // Current milliseconds (0-999)
+console.log(myD.getTime()); // Current timestamp in milliseconds since 1970-01-01T00:00:00Z
+console.log(myD.getTimezoneOffset()); // Timezone offset in minutes
+console.log(myD.toLocaleString()); // Localized date and time string
+
+let createdDate = new Date("2025, 0, 3"); // January 3, 2025
+console.log(createdDate); // Date object for January 3, 2025
+
+let timeStamp = Date.now(); // Current timestamp in milliseconds
+console.log(timeStamp); // Current timestamp in milliseconds
+
+
