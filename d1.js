@@ -81,3 +81,56 @@ const myfunc = function() {
     console.log("Hello world");
 }
 
+// Stack(primitive types) vs Heap(non-primitive types)
+
+let s1 = "Ram";
+let s2 = s1;
+s2 = "Shyam";
+console.log(s1); // "Ram"
+console.log(s2); // "Shyam"
+
+let obj1 = {
+    name: "Ram",
+    age: 30,
+}
+let obj2 = obj1;
+obj2.name = "Shyam";
+console.log(obj1.name); // "Shyam"
+console.log(obj2.name); // "Shyam"
+
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
+arr2.push(4);
+console.log(arr1); // [1, 2, 3, 4]
+console.log(arr2); // [1, 2, 3, 4]
+
+const name = "John";
+const count = 10;
+console.log(name + " has " + count + " apples.");
+
+console.log(`${name} has ${count} apples, with him`); // Template literals
+
+const st1 = new String("Hello"); // String object
+console.log(st1); // String { "Hello" }
+console.log(st1[0]); // "H"
+console.log(st1.length); // 5
+console.log(st1.toUpperCase()); // "HELLO"
+console.log(st1); // "Hello"
+console.log(st1.charAt(0)); // "H"
+console.log(st1.indexOf("l")); // 2
+console.log(st1.lastIndexOf("l")); // 3
+console.log(st1.includes("lo")); // true
+console.log(st1.startsWith("He")); // true
+
+const st2 = st1.substring(0, 2); // "He"
+console.log(st2); // "He"
+console.log(st1.slice(0, 2)); // "He"
+console.log(st1.slice(-2)); // "lo"
+
+const st3 = "dasagassfsfasdadsfsf";
+ // "dasagassfsfasdadsf@f"
+console.log(st3.replace("s", "@")); // "da@agassfsfasdadsfsf";
+
+const st4 = "Hello-world-how-are-you";
+console.log(st4.split("-")); // ["Hello", "world", "how", "are", "you"]
+
