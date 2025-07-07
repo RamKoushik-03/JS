@@ -168,4 +168,3 @@ console.log(createdDate); // Date object for January 3, 2025
 let timeStamp = Date.now(); // Current timestamp in milliseconds
 console.log(timeStamp); // Current timestamp in milliseconds
 
-
