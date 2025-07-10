@@ -28,3 +28,11 @@ console.log(a.includes(10)); // true
 console.log(a.indexOf(20)); // 2
 console.log(a.lastIndexOf(20)); // 2
 console.log(a.join(', ')); // "1, 10, 20, 4, 5"
+
+const marvel = ['Ironman', 'Thor', 'Hulk', 'captain America'];
+const dc = ['Batman', 'Superman', 'flash']
+
+marvel.push(...dc); // Merging arrays
+console.log(marvel); // ['Ironman', 'Thor', 'Hulk', 'captain America', 'Batman', 'Superman', 'flash']
+
+ 
