@@ -7,6 +7,10 @@ if (false) {
   console.log("This will never run");
 }   
 
+if(1 == "1") {
+  console.log("This will run because == does type coercion");
+}
+
 if (1 === 1) {
   console.log("This will always run");
 }
@@ -24,22 +28,6 @@ if (true) {
   }
 }
 
-//Switch Statement
-let value = 2;
-switch (value) {
-  case 1:
-    console.log("Value is 1");
-    break;
-  case 2:
-    console.log("Value is 2");
-    break;
-  case 3:
-    console.log("Value is 3");
-    break;
-  default:
-    console.log("Value is something else");
-}   
-
 // if else if
 let number = 10;
 if (number < 5) {
@@ -54,4 +42,42 @@ else if (number < 15) {
 else {
   console.log("Number is 15 or greater");
 }
+
+if(true && false) {
+  console.log("This will never run because one condition is false");
+}
+if(true || false) {
+  console.log("This will always run because one condition is true");
+}
+if(true || true) {
+  console.log("This will always run because both conditions are true");
+}
+if(true && true) {
+  console.log("This will always run because both conditions are true");
+}
+
+//Switch Statement
+let value = 2;
+switch (value) {
+  case 1:
+    console.log("Value is 1");
+    break;
+  case 2:
+    console.log("Value is 2");
+    break;
+  case 3:
+    console.log("Value is 3");
+    break;
+  default:
+    console.log("Value is something else");
+}       
+
+//Nullissh coalescing operator
+let val1;
+val1 = 5 ?? 10; // 5, because val1 is not null or undefined
+val1 = null ?? 10; // 10, because val1 is null
+val1 = undefined ?? 10; // 10, because val1 is undefined
+val1 = 0 ?? 10; // 0, because 0 is a valid value and not null or undefined
+val1 = "" ?? 10; // "", because empty string is a valid value and not null or undefined
+val1 = false ?? 10; // false, because false is a valid value and not null or undefined
 
