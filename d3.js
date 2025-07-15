@@ -32,7 +32,23 @@ console.log(a.join(', ')); // "1, 10, 20, 4, 5"
 const marvel = ['Ironman', 'Thor', 'Hulk', 'captain America'];
 const dc = ['Batman', 'Superman', 'flash']
 
-marvel.push(...dc); // Merging arrays
+newAr = marvel.concat(dc); // Concatenating arrays
+console.log(newAr); // ['Ironman', 'Thor', 'Hulk', 'captain America', 'Batman', 'Superman', 'flash']
+
+marvel.push(dc); // Merging arrays
 console.log(marvel); // ['Ironman', 'Thor', 'Hulk', 'captain America', 'Batman', 'Superman', 'flash']
 
- 
+allHeros = [...marvel, ...dc]; // Using spread operator to merge arrays
+console.log(allHeros); // ['Ironman', 'Thor', 'Hulk', 'captain America', 'Batman', 'Superman', 'flash']
+
+console.log(Array.isArray(marvel)); // true
+console.log(Array.isArray('marvel')); // false
+
+console.log(Array.from('marvel')); // ['m', 'a', 'r', 'v', 'e', 'l']
+
+let p1 = 5;
+let p2 = 10;
+let p3 = 15;
+const points = [p1, p2, p3]; // Using variables to create an array
+console.log(points); // [5, 10, 15]
+
