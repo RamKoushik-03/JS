@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body style = "background-color: black; color:white">
+    <ul class = "list-item">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function addItem(val) {
+        const li = document.createElement('li');
+        li.innerHTML = `${val}`;
+        document.querySelector('.list-item').
+        appendChild(li)
+    }
+    addItem('Python');
+    addItem('Java');
+
+    function addOptItem(val) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(val));
+        document.querySelector('.list-item').appendChild(li);
+    }
+    addOptItem('C++');
+    addOptItem('C#');
+
+
+    //Edit
+    const tt = document.querySelector('li:nth-child(1)');
+    // tt.innerHTML = 'JavaScript Updated'; // not optimized
+    const newLi = document.createElement('li');
+    newLi.appendChild(document.createTextNode('Js'));
+    document.querySelector('.list-item').replaceChild(newLi, tt);
+
+    //remove
+    const tt1 = document.querySelector('li:last-child');
+    tt1.remove();
+
+    
+
+</script>
+
+</html>
