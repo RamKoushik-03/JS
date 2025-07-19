@@ -5,7 +5,14 @@
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: gray;">
     
 </body>
+<script> 
+    const requestUrl = 'https://api.github.com/users/RamKoushik-03'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl);
+    console.log("Here");
+    xhr.send();
+</script>
 </html>
